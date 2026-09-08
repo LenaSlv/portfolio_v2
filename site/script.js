@@ -37,7 +37,10 @@ navigation.addEventListener('click', (event) => {
   const link = event.target.closest('a');
   if (!link || !compactLayout.matches) return;
   closeMenu();
-  const section = document.querySelector(link.getAttribute('href'));
+  const destination = new URL(link.href, location.href);
+  if (destination.origin !== location.origin || destination.pathname !== location.pathname || !destination.hash) return;
+  const section = document.getElementById(decodeURIComponent(destination.hash.slice(1)));
+  if (!section) return;
   section.setAttribute('tabindex', '-1');
   section.focus({ preventScroll: true });
   section.addEventListener('blur', () => section.removeAttribute('tabindex'), { once: true });
