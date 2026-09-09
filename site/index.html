@@ -8,28 +8,32 @@
   <title>Елена Сулоева — Product designer</title>
   <link rel="icon" type="image/png" href="../pic/avatar.png">
   <link rel="stylesheet" href="./fonts.css">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=67dc4a9e8c0a">
+  <script src="./script.js?v=00da8aa6c56a" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">К содержимому</a>
-  <div class="cover">
+  <div class="header-shell">
     <header class="header container">
       <a class="brand" href="#about" aria-label="Елена Сулоева — обо мне">
         <img class="avatar" src="../pic/avatar.png" alt="" width="48" height="48">
         <span>Елена Сулоева</span>
       </a>
-      <nav class="navigation" id="navigation" aria-label="Основная навигация">
+      <nav class="navigation" id="navigation" aria-label="Основная навигация"><div class="navigation-links">
         <a href="#about">Обо&nbsp;мне</a>
         <a href="#projects">Проекты</a>
         <a href="#experience">Опыт работы</a>
         <a href="#contacts">Контакты</a>
+</div>        <button class="contact-button" type="button" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog" hidden>Связаться со&nbsp;мной</button>
       </nav>
-      <a class="contact-button" href="#contacts">Связаться со&nbsp;мной</a>
+
       <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="navigation" hidden>
         <img src="../pic/menu.png" alt="" width="44" height="44">
       </button>
     </header>
+  </div>
+  <div class="cover">
+
     <main id="main" tabindex="-1">
       <section class="hero container" id="about" aria-labelledby="intro-title">
         <div class="contact-chips">
@@ -93,8 +97,7 @@
                 <a class="case-link" href="./corporate-transport.html" aria-label="Смотреть кейс «Сервис заказа корпоративного транспорта»">Смотреть кейс <span aria-hidden="true">→</span></a>
               </div>
               <picture class="project-picture">
-                <source media="(min-width: 701px)" srcset="../pic/corporate-desktop.png">
-                <img class="project-image" src="../pic/corporate.png" alt="Сотрудник прикладывает QR-билет на телефоне к валидатору корпоративного транспорта" width="560" height="356" loading="lazy" decoding="async">
+                <img class="project-image" src="../pic/corporate-desktop.png" alt="Сотрудник прикладывает QR-билет на телефоне к валидатору корпоративного транспорта" width="560" height="356" loading="lazy" decoding="async">
               </picture>
             </article>
             <article class="project project--soul" aria-labelledby="soul-title">
@@ -168,5 +171,17 @@
       <div class="footer-line" aria-hidden="true"></div>
     </div>
   </footer>
+
+  <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-dialog-title" aria-describedby="contact-dialog-description">
+    <div class="contact-dialog-content">
+      <h2 id="contact-dialog-title">Свяжитесь со&nbsp;мной</h2>
+      <p id="contact-dialog-description">Расскажу о&nbsp;проектах подробнее и&nbsp;отвечу на&nbsp;вопросы</p>
+      <div class="contact-dialog-links">
+        <a href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener noreferrer"><span>Telegram</span><strong><img src="../pic/telegram.svg" alt="" width="20" height="20">@Lena_Suloeva</strong></a>
+        <a href="mailto:lensuloeva@yandex.ru"><span>Почта</span><strong><img src="../pic/email.svg" alt="" width="24" height="24">lensuloeva@yandex.ru</strong></a>
+      </div>
+      <button class="contact-dialog-close" type="button" aria-label="Закрыть окно связи" autofocus><img src="../pic/modal-close.svg" alt="" width="18" height="18"></button>
+    </div>
+  </dialog>
 </body>
 </html>
