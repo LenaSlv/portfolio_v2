@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05060a">
+  <meta name="description" content="Кейс Soul: исследование, пользовательские сценарии и переработка поиска и выбора встреч.">
+  <title>Soul — Елена Сулоева</title>
+  <link rel="icon" type="image/png" href="../pic/avatar.png">
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./styles.css?v=308b3522d08c">
+  <link rel="stylesheet" href="./case.css?v=f373c40229ff">
+  <script src="./script.js?v=00da8aa6c56a" defer></script>
+  <script src="./case.js" defer></script>
+  <script src="./soul.js?v=2e19d4c38d73" defer></script>
+  <link rel="stylesheet" href="./soul.css?v=bb5465070947">
+</head>
+<body class="case-page soul-page">
+  <a class="skip-link" href="#main">К содержимому</a>
+  <div class="header-shell">
+    <header class="header container">
+      <a class="brand" href="./index.html" aria-label="Елена Сулоева — на главную">
+        <img class="avatar" src="../pic/avatar.png" alt="" width="48" height="48">
+        <span>Елена Сулоева</span>
+      </a>
+      <nav class="navigation" id="navigation" aria-label="Основная навигация">
+<div class="navigation-links">
+        <a href="./index.html#about">Обо&nbsp;мне</a>
+        <a href="./index.html#projects">Проекты</a>
+        <a href="./index.html#experience">Опыт работы</a>
+        <a href="#contacts">Контакты</a>
+</div>        <button class="contact-button" type="button" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog" hidden>Связаться со&nbsp;мной</button>
+      </nav>
+
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="navigation" hidden>
+        <img src="../pic/menu.png" alt="" width="44" height="44">
+      </button>
+    </header>
+  </div>
+  <div class="case-header">
+
+    <div class="case-back container"><a href="./index.html#projects"><span aria-hidden="true">←</span> Назад к&nbsp;проектам</a></div>
+  </div>
+  <main id="main" tabindex="-1">
+<section class="soul-hero container">
+<h1 id="case-title">Платформа для&nbsp;поиска компании и&nbsp;активностей в&nbsp;путешествиях</h1>
+<p class="soul-subtitle">Как исследование помогло перестроить поиск и&nbsp;выбор встреч</p>
+<ul class="case-meta" aria-label="О проекте">
+<li>Роль · Product Designer / UX/UI Designer</li>
+<li>Платформы · iOS / Android</li>
+<li>B2C</li></ul>
+<picture class="soul-showcase"><source media="(max-width:700px)" srcset="../pic/soul-case/hero-mobile.png"><img src="../pic/soul-case/hero.png" alt="Экраны приложения Soul: карточка мероприятия, карта поиска и подробности встречи" width="1248" height="630" fetchpriority="high"></picture></section>
+<section class="soul-section soul-context">
+<div class="container soul-section-inner">
+<p class="soul-eyebrow">01 · Контекст и&nbsp;проблема</p>
+<h2 id="context-title">Не&nbsp;улучшать интерфейс вслепую, а&nbsp;найти реальные барьеры</h2>
+<p class="soul-lead">На&nbsp;задачах поиска и&nbsp;выбора встречи наблюдала, где пользователи теряют контекст, какие условия понимают неверно и&nbsp;что мешает принять решение о&nbsp;записи.</p>
+<div class="soul-grid soul-grid-two">
+<article class="soul-panel">
+<h3>Продукт и&nbsp;аудитория</h3>
+<p>Soul помогает соло-путешественникам, экспатам, диджитал-номадам и&nbsp;новым жителям города находить живое общение через встречи рядом.</p></article>
+<article class="soul-panel">
+<h3>Продуктовая задача</h3>
+<p>Понять, где пользователь теряет контекст при&nbsp;поиске встречи и&nbsp;что мешает принять решение о&nbsp;записи.</p></article></div></div></section>
+<section class="soul-section soul-flow">
+<div class="container soul-section-inner">
+<h2><span class="soul-desktop-title">Пользовательские сценарии:</span><span class="soul-mobile-title">Ключевые пользовательские пути</span></h2>
+<div class="soul-flow-desktop">
+<div class="soul-flow-surface">
+<p class="soul-flow-note">Схема составлена постфактум — приложение уже разрабатывалось без&nbsp;выстроенного user flow. Я собрала сценарии в&nbsp;единую карту, чтобы найти нестыковки и&nbsp;возможные пробелы в&nbsp;логике.</p>
+<div id="soul-full-flow" class="soul-diagram-viewport">
+<div class="soul-diagram">
+<div style="left:974.09px;top:347.66px;width:30.795px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:1004.89px;top:162.08px;width:1.621px;height:185.58px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:974.09px;top:162.08px;width:30.795px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:354.14px;top:1324.18px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:123.18px;top:1324.18px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:925.47px;top:1368.75px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:824.17px;top:1324.18px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:589.16px;top:1324.18px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:925.47px;top:1299.06px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:690.46px;top:1299.06px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:455.44px;top:1299.06px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:220.43px;top:1299.06px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:945.73px;top:1134.55px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:706.66px;top:1134.55px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:812.01px;top:1109.43px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:706.66px;top:1064.86px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:812.01px;top:1039.73px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:945.73px;top:995.16px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:706.66px;top:995.16px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:812.01px;top:970.04px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:228.53px;top:1109.43px;width:24.312px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:354.14px;top:1064.86px;width:1.621px;height:44.572px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:354.14px;top:995.16px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:228.53px;top:1039.73px;width:24.312px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:127.23px;top:995.16px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:228.53px;top:970.04px;width:24.312px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:1042.98px;top:743.94px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:824.17px;top:813.63px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:824.17px;top:743.94px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:589.16px;top:743.94px;width:1.621px;height:89.143px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:455.44px;top:788.51px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:354.14px;top:743.94px;width:1.621px;height:19.449px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:925.47px;top:718.82px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:690.46px;top:718.82px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:455.44px;top:718.82px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:220.43px;top:718.82px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:868.74px;top:577px;width:1.621px;height:11.346px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:868.74px;top:491.1px;width:1.621px;height:35.657px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:982.2px;top:503.25px;width:16.208px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:982.2px;top:433.56px;width:16.208px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:982.2px;top:433.56px;width:1.621px;height:69.694px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:974.09px;top:465.98px;width:8.104px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:739.08px;top:551.88px;width:24.312px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:739.08px;top:527.57px;width:1.621px;height:24.312px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:714.77px;top:527.57px;width:24.312px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:714.77px;top:465.98px;width:48.624px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:739.08px;top:465.98px;width:24.312px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:739.08px;top:404.39px;width:1.621px;height:61.59px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:714.77px;top:404.39px;width:24.312px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:495.96px;top:527.57px;width:16.208px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:495.96px;top:465.98px;width:16.208px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:495.96px;top:404.39px;width:16.208px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:495.96px;top:404.39px;width:1.621px;height:123.18px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:479.75px;top:433.56px;width:16.208px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:228.53px;top:433.56px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:745.56px;top:613.47px;width:17.829px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:745.56px;top:162.08px;width:1.621px;height:451.389px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:714.77px;top:162.08px;width:30.795px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:868.74px;top:311.19px;width:1.621px;height:11.346px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:868.74px;top:249.6px;width:1.621px;height:11.346px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:868.74px;top:188.01px;width:1.621px;height:11.346px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:868.74px;top:126.42px;width:1.621px;height:11.346px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:747.18px;top:100.49px;width:16.208px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:714.77px;top:100.49px;width:48.624px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:747.18px;top:38.9px;width:1.621px;height:61.59px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:714.77px;top:38.9px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:495.96px;top:162.08px;width:16.208px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:495.96px;top:100.49px;width:16.208px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:495.96px;top:38.9px;width:16.208px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:495.96px;top:38.9px;width:1.621px;height:123.99px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:479.75px;top:63.21px;width:16.208px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<div style="left:228.53px;top:63.21px;width:32.416px;height:1.621px;background:#2e6eeb;line-height:normal;position:absolute" aria-hidden="true"></div>
+<p style="left:25.93px;top:9.72px;width:486.236px;height:16.208px;color:#2e6eeb;font-size:11.346px;line-height:normal;font-weight:500;position:absolute">01 · Вход и&nbsp;маршрутизация</p>
+<div style="left:25.93px;top:38.9px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Открывает Soul</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">Telegram Mini App</p></div>
+<div style="left:260.95px;top:38.9px;width:218.806px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;border-color:#2e6eeb;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center;border:1.216px solid #2e6eeb">
+<p style="color:#2e6eeb;font-size:10.535px;line-height:normal;font-weight:500;width:100%">По&nbsp;какой ссылке вошёл?</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">прямая · реферальная · встреча</p></div>
+<div style="left:512.17px;top:14.59px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Прямая ссылка</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">переход к&nbsp;карте</p></div>
+<div style="left:512.17px;top:76.18px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Реферальная ссылка</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">добавление в&nbsp;программу друга</p></div>
+<div style="left:512.17px;top:137.77px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Ссылка на&nbsp;встречу</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">переход к&nbsp;карточке встречи</p></div>
+<div style="left:763.39px;top:76.18px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Авторизация</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">через Telegram WebApp API</p></div>
+<div style="left:763.39px;top:137.77px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;border-color:#2e6eeb;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center;border:1.216px solid #2e6eeb">
+<p style="color:#2e6eeb;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Первый вход?</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">проверка состояния аккаунта</p></div>
+<div style="left:763.39px;top:199.36px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Онбординг и&nbsp;верификация</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">только для&nbsp;нового пользователя</p></div>
+<div style="left:763.39px;top:260.95px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Стартовое начисление</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">единая транзакция START_REWARD</p></div>
+<div style="left:763.39px;top:322.54px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Карта</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">стартовый экран приложения</p></div>
+<p style="left:25.93px;top:379.26px;width:486.236px;height:16.208px;color:#2e6eeb;font-size:11.346px;line-height:normal;font-weight:500;position:absolute">02 · Поиск встречи</p>
+<div style="left:25.93px;top:408.44px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Карта</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">встречи рядом</p></div>
+<div style="left:260.95px;top:408.44px;width:218.806px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;border-color:#2e6eeb;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center;border:1.216px solid #2e6eeb">
+<p style="color:#2e6eeb;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Разрешена геолокация?</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">определяет стартовую область</p></div>
+<div style="left:512.17px;top:379.26px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Список рядом</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">открыт по&nbsp;умолчанию</p></div>
+<div style="left:512.17px;top:440.85px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Поиск: город и&nbsp;дата</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">можно искать в&nbsp;другом городе</p></div>
+<div style="left:512.17px;top:502.44px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Тап по&nbsp;метке</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">открывает превью встречи</p></div>
+<div style="left:763.39px;top:440.85px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;border-color:#2e6eeb;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center;border:1.216px solid #2e6eeb">
+<p style="color:#2e6eeb;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Встречи найдены?</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">по&nbsp;области или запросу</p></div>
+<div style="left:998.4px;top:408.44px;width:129.663px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Найдено N встреч</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">переход к&nbsp;превью</p></div>
+<div style="left:998.4px;top:478.13px;width:129.663px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Ничего не&nbsp;найдено</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">ближайшие встречи или создание</p></div>
+<div style="left:763.39px;top:526.76px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Превью встречи</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">название · дата · место</p></div>
+<div style="left:763.39px;top:588.35px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Карточка встречи</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">условия · адрес · хост</p></div>
+<p style="left:25.93px;top:664.52px;width:486.236px;height:16.208px;color:#2e6eeb;font-size:11.346px;line-height:normal;font-weight:500;position:absolute">03 · Запись и&nbsp;посещение</p>
+<div style="left:25.93px;top:693.7px;width:194.494px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">«Я пойду»</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">основное действие в&nbsp;карточке</p></div>
+<div style="left:252.84px;top:693.7px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Запись подтверждена</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">встреча добавлена в&nbsp;активности</p></div>
+<div style="left:487.86px;top:693.7px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Билет</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">QR откроется перед встречей</p></div>
+<div style="left:722.87px;top:693.7px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Сканирование QR</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">организатор подтверждает вход</p></div>
+<div style="left:957.88px;top:693.7px;width:170.183px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;border-color:#2e6eeb;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center;border:1.216px solid #2e6eeb">
+<p style="color:#2e6eeb;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Доступен бонус?</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">проверка условий программы</p></div>
+<div style="left:252.84px;top:763.39px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Пригласить друга</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">ссылка на&nbsp;встречу</p></div>
+<div style="left:487.86px;top:763.39px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Друг открывает встречу</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">может записаться отдельно</p></div>
+<div style="left:487.86px;top:833.08px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Отменить запись</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">доступно прямо из&nbsp;билета</p></div>
+<div style="left:722.87px;top:763.39px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Посещение подтверждено</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">билет успешно отсканирован</p></div>
+<div style="left:957.88px;top:763.39px;width:170.183px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Начислен бонус</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">если условия выполнены</p></div>
+<div style="left:722.87px;top:833.08px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Оценка встречи</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">влияет на&nbsp;рейтинг хоста</p></div>
+<p style="left:25.93px;top:915.74px;width:502.444px;height:16.208px;color:#2e6eeb;font-size:11.346px;line-height:normal;font-weight:500;position:absolute">04 · Активности и&nbsp;уведомления</p>
+<div style="left:25.93px;top:944.92px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Активности</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">отдельный раздел в&nbsp;таб-баре</p></div>
+<div style="left:252.84px;top:944.92px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Предстоящие / прошедшие</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">фильтр по&nbsp;статусу и&nbsp;дате</p></div>
+<div style="left:25.93px;top:1014.61px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Карточка активности</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">встреча · билет · статус</p></div>
+<div style="left:252.84px;top:1014.61px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;border-color:#2e6eeb;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center;border:1.216px solid #2e6eeb">
+<p style="color:#2e6eeb;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Встреча изменена?</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">проверка новых параметров</p></div>
+<div style="left:25.93px;top:1084.31px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Уведомление</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">что изменилось или отменено</p></div>
+<div style="left:252.84px;top:1084.31px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Возврат в&nbsp;карточку</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">актуальные детали встречи</p></div>
+<p style="left:601.31px;top:915.74px;width:526.756px;height:16.208px;color:#2e6eeb;font-size:11.346px;line-height:normal;font-weight:500;position:absolute">05 · Создание и&nbsp;управление встречей</p>
+<div style="left:601.31px;top:944.92px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Создать встречу</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">из&nbsp;карты или пустой выдачи</p></div>
+<div style="left:844.43px;top:944.92px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Место и&nbsp;время</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">точка на&nbsp;карте · дата</p></div>
+<div style="left:601.31px;top:1014.61px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Условия и&nbsp;лимит гостей</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">описание · формат входа</p></div>
+<div style="left:844.43px;top:1014.61px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Бонусный фонд</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">опционально за&nbsp;Soul Points</p></div>
+<div style="left:601.31px;top:1084.31px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;border-color:#2e6eeb;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center;border:1.216px solid #2e6eeb">
+<p style="color:#2e6eeb;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Достаточно SP?</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">проверка баланса</p></div>
+<div style="left:844.43px;top:1084.31px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Опубликовать</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">встреча появляется на&nbsp;карте</p></div>
+<div style="left:601.31px;top:1154px;width:210.702px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Недостаточно SP</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">пополнить баланс или убрать бонус</p></div>
+<div style="left:844.43px;top:1154px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Редактировать / отменить</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">участники получат уведомление</p></div>
+<p style="left:25.93px;top:1244.76px;width:972.472px;height:16.208px;color:#2e6eeb;font-size:11.346px;line-height:normal;font-weight:500;position:absolute">06 · Профиль, друзья и&nbsp;Soul Points</p>
+<div style="left:25.93px;top:1273.94px;width:194.494px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Профиль</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">данные · страна · приватность</p></div>
+<div style="left:252.84px;top:1273.94px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Ранг и&nbsp;XP</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">Guest · Creator · Ambassador</p></div>
+<div style="left:487.86px;top:1273.94px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Soul Points</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">баланс и&nbsp;история операций</p></div>
+<div style="left:722.87px;top:1273.94px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Друзья</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">список и&nbsp;приглашения</p></div>
+<div style="left:957.88px;top:1273.94px;width:170.183px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Настройки</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">язык · видимость · страна</p></div>
+<div style="left:487.86px;top:1343.63px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Фарминг</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">таймер → собрать SP</p></div>
+<div style="left:722.87px;top:1343.63px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;border-color:#2e6eeb;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center;border:1.216px solid #2e6eeb">
+<p style="color:#2e6eeb;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Лимит приглашений?</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">зависит от&nbsp;ранга</p></div>
+<div style="left:957.88px;top:1343.63px;width:170.183px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Повысить лимит</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">если достаточно SP</p></div>
+<div style="left:25.93px;top:1343.63px;width:194.494px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Рейтинг</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">видимость зависит от&nbsp;страны</p></div>
+<div style="left:252.84px;top:1343.63px;width:202.598px;height:50.244px;gap:1.621px;border-radius:9.725px;padding-top:7.294px;padding-bottom:6.483px;padding-inline:12.966px;background:#1d2737;line-height:normal;position:absolute;display:flex;flex-direction:column;text-align:center">
+<p style="color:#f6f9ff;font-size:10.535px;line-height:normal;font-weight:500;width:100%">Профиль пользователя</p>
+<p style="color:#8f99b2;font-size:8.914px;line-height:11.346px;width:100%">ранг · XP · активности</p></div>
+<p style="left:497.58px;top:25.12px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">прямая</p>
+<p style="left:497.58px;top:86.71px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">реферал</p>
+<p style="left:497.58px;top:148.3px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">встреча</p>
+<p style="left:875.22px;top:190.44px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">да</p>
+<p style="left:978.96px;top:149.11px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">нет</p>
+<p style="left:978.96px;top:419.78px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">да</p>
+<p style="left:978.96px;top:489.48px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">нет</p>
+<p style="left:1048.65px;top:749.61px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">да</p>
+<p style="left:891.43px;top:749.61px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">нет бонуса</p>
+<p style="left:816.88px;top:1095.65px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">да</p>
+<p style="left:607.79px;top:1137.79px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">нет</p>
+<p style="left:930.33px;top:1354.98px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">да</p>
+<p style="left:829.84px;top:1329.04px;width:64.831px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">лимит</p>
+<p style="left:1009.75px;top:232.58px;width:105.351px;height:11.346px;color:#8f99b2;font-size:8.104px;line-height:normal;position:absolute">нет · повторный вход</p></div></div>
+<button class="soul-flow-toggle" aria-expanded="false" aria-controls="soul-full-flow" hidden>Показать полный флоу</button></div></div>
+<div class="soul-flow-mobile">
+<article class="soul-flow-group">
+<h3>
+<button class="soul-flow-summary" aria-expanded="false" aria-controls="soul-flow-0">01 · Вход и&nbsp;маршрутизация<img src="../pic/chevron-right.svg" alt="" width="20" height="20"></button></h3>
+<div id="soul-flow-0" class="soul-flow-body">
+<svg class="soul-flow-lines" aria-hidden="true"></svg>
+<div class="soul-mobile-node" data-flow-node="7300">
+<h4>Открывает Soul</h4>
+<p>Telegram Mini App</p></div>
+<div class="soul-mobile-node soul-mobile-node-decision" data-flow-node="7303">
+<h4>По&nbsp;какой ссылке вошёл?</h4>
+<p>прямая · реферальная · встреча</p>
+<p class="soul-flow-branch" data-flow-target="7306">прямая</p>
+<p class="soul-flow-branch" data-flow-target="7309">реферал</p>
+<p class="soul-flow-branch" data-flow-target="7312">встреча</p></div>
+<div class="soul-mobile-node" data-flow-node="7306">
+<h4>Прямая ссылка</h4>
+<p>переход к&nbsp;карте</p></div>
+<div class="soul-mobile-node" data-flow-node="7309">
+<h4>Реферальная ссылка</h4>
+<p>добавление в&nbsp;программу друга</p></div>
+<div class="soul-mobile-node" data-flow-node="7312">
+<h4>Ссылка на&nbsp;встречу</h4>
+<p>переход к&nbsp;карточке встречи</p></div>
+<div class="soul-mobile-node" data-flow-node="7315">
+<h4>Авторизация</h4>
+<p>через Telegram WebApp API</p></div>
+<div class="soul-mobile-node soul-mobile-node-decision" data-flow-node="7318">
+<h4>Первый вход?</h4>
+<p>проверка состояния аккаунта</p>
+<p class="soul-flow-branch" data-flow-target="7321">да</p>
+<p class="soul-flow-branch" data-flow-target="7327">нет · повторный вход</p></div>
+<div class="soul-mobile-node" data-flow-node="7321">
+<h4>Онбординг и&nbsp;верификация</h4>
+<p>только для&nbsp;нового пользователя</p></div>
+<div class="soul-mobile-node" data-flow-node="7324">
+<h4>Стартовое начисление</h4>
+<p>единая транзакция START_REWARD</p></div>
+<div class="soul-mobile-node" data-flow-node="7327">
+<h4>Карта</h4>
+<p>стартовый экран приложения</p></div>
+<div class="soul-mobile-node" data-flow-node="7358">
+<h4><a href="#soul-meeting-node" class="soul-flow-reference">Карточка встречи</a></h4>
+<p>Продолжение в&nbsp;разделе «Поиск встречи»</p></div></div></article>
+<article class="soul-flow-group">
+<h3>
+<button class="soul-flow-summary" aria-expanded="false" aria-controls="soul-flow-1">02 · Поиск встречи<img src="../pic/chevron-right.svg" alt="" width="20" height="20"></button></h3>
+<div id="soul-flow-1" class="soul-flow-body">
+<svg class="soul-flow-lines" aria-hidden="true"></svg>
+<div class="soul-mobile-node" data-flow-node="7331">
+<h4>Карта</h4>
+<p>встречи рядом</p></div>
+<div class="soul-mobile-node soul-mobile-node-decision" data-flow-node="7334">
+<h4>Разрешена геолокация?</h4>
+<p>определяет стартовую область</p></div>
+<div class="soul-mobile-node" data-flow-node="7337">
+<h4>Список рядом</h4>
+<p>открыт по&nbsp;умолчанию</p></div>
+<div class="soul-mobile-node" data-flow-node="7340">
+<h4>Поиск: город и&nbsp;дата</h4>
+<p>можно искать в&nbsp;другом городе</p></div>
+<div class="soul-mobile-node" data-flow-node="7343">
+<h4>Тап по&nbsp;метке</h4>
+<p>открывает превью встречи</p></div>
+<div class="soul-mobile-node soul-mobile-node-decision" data-flow-node="7346">
+<h4>Встречи найдены?</h4>
+<p>по&nbsp;области или запросу</p>
+<p class="soul-flow-branch" data-flow-target="7349">да</p>
+<p class="soul-flow-branch" data-flow-target="7352">нет</p></div>
+<div class="soul-mobile-node" data-flow-node="7349">
+<h4>Найдено N встреч</h4>
+<p>переход к&nbsp;превью</p></div>
+<div class="soul-mobile-node" data-flow-node="7352">
+<h4>Ничего не&nbsp;найдено</h4>
+<p>ближайшие встречи или создание</p></div>
+<div class="soul-mobile-node" data-flow-node="7355">
+<h4>Превью встречи</h4>
+<p>название · дата · место</p></div>
+<div class="soul-mobile-node" id="soul-meeting-node" data-flow-node="7358" tabindex="-1">
+<h4>Карточка встречи</h4>
+<p>условия · адрес · хост</p></div></div></article>
+<article class="soul-flow-group">
+<h3>
+<button class="soul-flow-summary" aria-expanded="false" aria-controls="soul-flow-2">03 · Запись и&nbsp;посещение<img src="../pic/chevron-right.svg" alt="" width="20" height="20"></button></h3>
+<div id="soul-flow-2" class="soul-flow-body">
+<svg class="soul-flow-lines" aria-hidden="true"></svg>
+<div class="soul-mobile-node" data-flow-node="7362">
+<h4>«Я пойду»</h4>
+<p>основное действие в&nbsp;карточке</p></div>
+<div class="soul-mobile-node" data-flow-node="7365">
+<h4>Запись подтверждена</h4>
+<p>встреча добавлена в&nbsp;активности</p></div>
+<div class="soul-mobile-node" data-flow-node="7368">
+<h4>Билет</h4>
+<p>QR откроется перед встречей</p></div>
+<div class="soul-mobile-node" data-flow-node="7377">
+<h4>Пригласить друга</h4>
+<p>ссылка на&nbsp;встречу</p></div>
+<div class="soul-mobile-node" data-flow-node="7380">
+<h4>Друг открывает встречу</h4>
+<p>может записаться отдельно</p></div>
+<div class="soul-mobile-node" data-flow-node="7371">
+<h4>Сканирование QR</h4>
+<p>организатор подтверждает вход</p>
+<p class="soul-flow-branch" data-flow-target="7386">нет бонуса</p></div>
+<div class="soul-mobile-node soul-mobile-node-decision" data-flow-node="7374">
+<h4>Доступен бонус?</h4>
+<p>проверка условий программы</p>
+<p class="soul-flow-branch" data-flow-target="7389">да</p></div>
+<div class="soul-mobile-node" data-flow-node="7389">
+<h4>Начислен бонус</h4>
+<p>если условия выполнены</p></div>
+<div class="soul-mobile-node" data-flow-node="7386">
+<h4>Посещение подтверждено</h4>
+<p>билет успешно отсканирован</p></div>
+<div class="soul-mobile-node" data-flow-node="7392">
+<h4>Оценка встречи</h4>
+<p>влияет на&nbsp;рейтинг хоста</p></div>
+<div class="soul-mobile-node" data-flow-node="7383">
+<h4>Отменить запись</h4>
+<p>доступно прямо из&nbsp;билета</p></div></div></article>
+<article class="soul-flow-group">
+<h3>
+<button class="soul-flow-summary" aria-expanded="false" aria-controls="soul-flow-3">04 · Активности и&nbsp;уведомления<img src="../pic/chevron-right.svg" alt="" width="20" height="20"></button></h3>
+<div id="soul-flow-3" class="soul-flow-body">
+<svg class="soul-flow-lines" aria-hidden="true"></svg>
+<div class="soul-mobile-node" data-flow-node="7396">
+<h4>Активности</h4>
+<p>отдельный раздел в&nbsp;таб-баре</p></div>
+<div class="soul-mobile-node" data-flow-node="7399">
+<h4>Предстоящие / прошедшие</h4>
+<p>фильтр по&nbsp;статусу и&nbsp;дате</p></div>
+<div class="soul-mobile-node" data-flow-node="7402">
+<h4>Карточка активности</h4>
+<p>встреча · билет · статус</p></div>
+<div class="soul-mobile-node soul-mobile-node-decision" data-flow-node="7405">
+<h4>Встреча изменена?</h4>
+<p>проверка новых параметров</p></div>
+<div class="soul-mobile-node" data-flow-node="7408">
+<h4>Уведомление</h4>
+<p>что изменилось или отменено</p></div>
+<div class="soul-mobile-node" data-flow-node="7411">
+<h4>Возврат в&nbsp;карточку</h4>
+<p>актуальные детали встречи</p></div></div></article>
+<article class="soul-flow-group">
+<h3>
+<button class="soul-flow-summary" aria-expanded="false" aria-controls="soul-flow-4">05 · Создание и&nbsp;управление встречей<img src="../pic/chevron-right.svg" alt="" width="20" height="20"></button></h3>
+<div id="soul-flow-4" class="soul-flow-body">
+<svg class="soul-flow-lines" aria-hidden="true"></svg>
+<div class="soul-mobile-node" data-flow-node="7415">
+<h4>Создать встречу</h4>
+<p>из&nbsp;карты или пустой выдачи</p></div>
+<div class="soul-mobile-node" data-flow-node="7418">
+<h4>Место и&nbsp;время</h4>
+<p>точка на&nbsp;карте · дата</p></div>
+<div class="soul-mobile-node" data-flow-node="7421">
+<h4>Условия и&nbsp;лимит гостей</h4>
+<p>описание · формат входа</p></div>
+<div class="soul-mobile-node" data-flow-node="7424">
+<h4>Бонусный фонд</h4>
+<p>опционально за&nbsp;Soul Points</p></div>
+<div class="soul-mobile-node soul-mobile-node-decision" data-flow-node="7427">
+<h4>Достаточно SP?</h4>
+<p>проверка баланса</p>
+<p class="soul-flow-branch" data-flow-target="7430">да</p>
+<p class="soul-flow-branch" data-flow-target="7433">нет</p></div>
+<div class="soul-mobile-node" data-flow-node="7433">
+<h4>Недостаточно SP</h4>
+<p>пополнить баланс или убрать бонус</p></div>
+<div class="soul-mobile-node" data-flow-node="7430">
+<h4>Опубликовать</h4>
+<p>встреча появляется на&nbsp;карте</p></div>
+<div class="soul-mobile-node" data-flow-node="7436">
+<h4>Редактировать / отменить</h4>
+<p>участники получат уведомление</p></div></div></article>
+<article class="soul-flow-group">
+<h3>
+<button class="soul-flow-summary" aria-expanded="false" aria-controls="soul-flow-5">06 · Профиль, друзья и&nbsp;Soul Points<img src="../pic/chevron-right.svg" alt="" width="20" height="20"></button></h3>
+<div id="soul-flow-5" class="soul-flow-body">
+<svg class="soul-flow-lines" aria-hidden="true"></svg>
+<div class="soul-mobile-node" data-flow-node="7440">
+<h4>Профиль</h4>
+<p>данные · страна · приватность</p></div>
+<div class="soul-mobile-node" data-flow-node="7443">
+<h4>Ранг и&nbsp;XP</h4>
+<p>Guest · Creator · Ambassador</p></div>
+<div class="soul-mobile-node" data-flow-node="7446">
+<h4>Soul Points</h4>
+<p>баланс и&nbsp;история операций</p></div>
+<div class="soul-mobile-node" data-flow-node="7455">
+<h4>Фарминг</h4>
+<p>таймер → собрать SP</p></div>
+<div class="soul-mobile-node" data-flow-node="7449">
+<h4>Друзья</h4>
+<p>список и&nbsp;приглашения</p>
+<p class="soul-flow-branch" data-flow-target="7458">лимит</p></div>
+<div class="soul-mobile-node soul-mobile-node-decision" data-flow-node="7458">
+<h4>Лимит приглашений?</h4>
+<p>зависит от&nbsp;ранга</p>
+<p class="soul-flow-branch" data-flow-target="7461">да</p></div>
+<div class="soul-mobile-node" data-flow-node="7461">
+<h4>Повысить лимит</h4>
+<p>если достаточно SP</p></div>
+<div class="soul-mobile-node" data-flow-node="7452">
+<h4>Настройки</h4>
+<p>язык · видимость · страна</p></div>
+<div class="soul-mobile-node" data-flow-node="7464">
+<h4>Рейтинг</h4>
+<p>видимость зависит от&nbsp;страны</p></div>
+<div class="soul-mobile-node" data-flow-node="7467">
+<h4>Профиль пользователя</h4>
+<p>ранг · XP · активности</p></div></div></article></div></div></section>
+<section class="soul-section soul-synthesis">
+<div class="container soul-section-inner">
+<p class="soul-eyebrow">02 · Синтез</p>
+<h2 id="synthesis-title">От&nbsp;наблюдений <span class="soul-desktop-title">-</span><span class="soul-mobile-title">—</span> к&nbsp;продуктовым проблемам</h2>
+<p class="soul-lead">Приоритизировала не&nbsp;отдельные дефекты интерфейса, а&nbsp;барьеры, которые мешали принять решение о&nbsp;записи.</p>
+<div class="soul-grid soul-grid-three">
+<article class="soul-panel"><span class="soul-number">01</span>
+<h3>Действие и&nbsp;место трудно найти</h3>
+<p>Кнопка находилась внизу, адрес был разделён между блоками, а&nbsp;важные детали скрывались под «Читать больше».</p></article>
+<article class="soul-panel"><span class="soul-number">02</span>
+<h3>Финансовые условия непонятны</h3>
+<p>25 EUR, 600 SP и&nbsp;«первый гость» не&nbsp;складывались в&nbsp;понятные правила участия.</p></article>
+<article class="soul-panel"><span class="soul-number">03</span>
+<h3>Не&nbsp;хватает доверия</h3>
+<p>У&nbsp;организатора не&nbsp;было подтверждённого опыта и&nbsp;оценок реальных участников.</p></article></div><aside class="soul-priority">
+<h3>Критерий приоритета</h3>
+<p>Насколько проблема мешает понять встречу, довериться организатору и&nbsp;нажать «Я пойду».</p></aside></div></section>
+<section class="soul-section soul-map">
+<div class="container soul-section-inner">
+<p class="soul-eyebrow">03 · Решение 1</p>
+<h2 id="map-title">Дать достаточно информации для&nbsp;первичного выбора</h2>
+<article class="soul-panel soul-hypothesis">
+<h3>Сравнение — до&nbsp;открытия карточки</h3>
+<p class="soul-eyebrow">Гипотеза</p>
+<p>Если вынести фильтры по&nbsp;месту и&nbsp;времени наверх, показывать превью по&nbsp;тапу на&nbsp;метку и&nbsp;различать метки по&nbsp;типу, пользователь сможет сравнить встречи прямо на&nbsp;карте и&nbsp;открывать детальную карточку осознанно, а&nbsp;не наугад.</p>
+<div class="soul-grid soul-values">
+<article>
+<h4>Пользователю</h4>
+<p>Сравнивает варианты по&nbsp;расстоянию и&nbsp;типу до&nbsp;перехода в&nbsp;карточку — не&nbsp;тратит тапы впустую.</p></article>
+<article>
+<h4>Бизнесу</h4>
+<p>Меньше случайных переходов в&nbsp;карточку — выше доля осознанных записей.</p></article></div></article>
+<div class="soul-grid soul-grid-two soul-comparisons">
+<figure class="soul-comparison "><figcaption>Было</figcaption>
+<div class="soul-mockup-track" tabindex="0" role="region" aria-label="Было: экраны поиска">
+<picture class="soul-phone-picture"><source media="(max-width:700px)" srcset="../pic/soul-case/mobile-map-before-1.svg"><img src="../pic/soul-case/map-before-1.png" alt="Было: карта встреч" width="244" height="499" loading="lazy" decoding="async"></picture>
+<picture class="soul-phone-picture"><source media="(max-width:700px)" srcset="../pic/soul-case/mobile-map-before-2.svg"><img src="../pic/soul-case/map-before-2.png" alt="Было: результат поиска" width="244" height="499" loading="lazy" decoding="async"></picture></div></figure>
+<figure class="soul-comparison "><figcaption>Новое решение</figcaption>
+<div class="soul-mockup-track" tabindex="0" role="region" aria-label="Новое решение: экраны поиска">
+<picture class="soul-phone-picture"><source media="(max-width:700px)" srcset="../pic/soul-case/mobile-map-after-1.svg"><img src="../pic/soul-case/map-after-1.png" alt="Новое решение: карта встреч" width="244" height="499" loading="lazy" decoding="async"></picture>
+<picture class="soul-phone-picture"><source media="(max-width:700px)" srcset="../pic/soul-case/mobile-map-after-2.svg"><img src="../pic/soul-case/map-after-2.png" alt="Новое решение: результат поиска" width="244" height="499" loading="lazy" decoding="async"></picture></div></figure></div>
+<article class="soul-panel soul-changes">
+<h3>Что изменилось</h3>
+<ul>
+<li>Вынесла фильтры «где» и&nbsp;«когда» наверх — на&nbsp;задаче «найди встречу рядом на&nbsp;эти выходные» участники доходили до&nbsp;результата и&nbsp;в интервью подтверждали, что поняли: выбор можно сузить.</li>
+<li>Сделала так, что тап по&nbsp;метке сразу открывает превью — участники стали сравнивать соседние метки, а&nbsp;не тыкать наугад.</li>
+<li>Вывела расстояние на&nbsp;превью и&nbsp;расстояние стало одним из&nbsp;первых критериев решения.</li>
+<li>Заменила инструкцию про масштаб пустым состоянием с&nbsp;понятной причиной и&nbsp;кнопкой «Показать ближайшие» — участники выходили из&nbsp;тупика одним действием вместо ручного зума.</li></ul></article></div></section>
+<section class="soul-section soul-meeting">
+<div class="container soul-section-inner">
+<p class="soul-eyebrow">04 · Решение 2</p>
+<h2 id="meeting-title">Снять неопределённость до&nbsp;записи</h2>
+<article class="soul-panel soul-hypothesis">
+<h3>Ключевые условия — на&nbsp;первом экране</h3>
+<p class="soul-eyebrow">Гипотеза</p>
+<p>Если собрать адрес, формат входа, бонус и&nbsp;подготовку в&nbsp;одном блоке вместо распределения по&nbsp;экрану, пользователь примет решение и&nbsp;запишется без&nbsp;возврата к&nbsp;длинному описанию.</p>
+<div class="soul-grid soul-values">
+<article>
+<h4>Пользователю</h4>
+<p>Не&nbsp;прокручивает карточку в&nbsp;поисках ответа — все условия видны сразу.</p></article>
+<article>
+<h4>Бизнесу</h4>
+<p>Меньше отказов на&nbsp;этапе просмотра — решение принимается быстрее.</p></article></div></article>
+<div class="soul-grid soul-grid-two soul-comparisons">
+<figure class="soul-comparison soul-meeting-comparison"><figcaption>Было</figcaption>
+<div class="soul-mockup-track" tabindex="0" role="region" aria-label="Было: экраны карточки встречи">
+<picture class="soul-phone-picture"><source media="(max-width:700px)" srcset="../pic/soul-case/mobile-meeting-before-1.svg"><img src="../pic/soul-case/meeting-before-1.png" alt="Было: карточка встречи" width="196" height="399" loading="lazy" decoding="async"></picture>
+<picture class="soul-phone-picture"><source media="(max-width:700px)" srcset="../pic/soul-case/mobile-meeting-before-2.svg"><img src="../pic/soul-case/meeting-before-2.png" alt="Было: подробности и условия встречи" width="196" height="399" loading="lazy" decoding="async"></picture></div></figure>
+<figure class="soul-comparison soul-meeting-comparison"><figcaption>Новое решение</figcaption>
+<div class="soul-mockup-track" tabindex="0" role="region" aria-label="Новое решение: экраны карточки встречи">
+<picture class="soul-phone-picture"><source media="(max-width:700px)" srcset="../pic/soul-case/mobile-meeting-after-1.svg"><img src="../pic/soul-case/meeting-after-1.png" alt="Новое решение: карточка встречи" width="196" height="399" loading="lazy" decoding="async"></picture>
+<picture class="soul-phone-picture"><source media="(max-width:700px)" srcset="../pic/soul-case/mobile-meeting-after-2.svg"><img src="../pic/soul-case/meeting-after-2.png" alt="Новое решение: подробности и условия встречи" width="196" height="399" loading="lazy" decoding="async"></picture></div></figure></div>
+<article class="soul-panel soul-changes">
+<h3>Что изменилось</h3>
+<ul>
+<li>Закрепила CTA-кнопки «Я пойду» и&nbsp;«Пригласить» — действие остаётся доступным при&nbsp;прокрутке.</li>
+<li>Собрала условия в&nbsp;один блок — адрес, формат входа, бонус и&nbsp;подготовка считываются до&nbsp;длинного описания.</li>
+<li>Добавила пояснение к&nbsp;месту встречи: пользователю не&nbsp;обязательно открывать стороннее приложение, чтобы понять, где оно находится — достаточно прочитать текстовое описание и&nbsp;адрес.</li>
+<li>Спроектировала рейтинг доверия — гипотеза для&nbsp;следующей итерации, которая должна снизить барьер перед записью.</li></ul></article></div></section>
+<section class="soul-section soul-results">
+<div class="container soul-section-inner">
+<p class="soul-eyebrow">05 · Результат</p>
+<h2 id="results-title">Что подтвердили тесты — и&nbsp;что ещё нужно измерить</h2>
+<p class="soul-lead">Разделила наблюдения, продуктовые гипотезы и&nbsp;будущие метрики, чтобы не&nbsp;выдавать качественные данные за&nbsp;рост конверсии.</p>
+<div class="soul-grid soul-grid-three">
+<article class="soul-panel">
+<h3>Подтвердили качественно</h3>
+<p>Пользователи находили фильтры, сравнивали встречи через превью, понимали пустую выдачу и&nbsp;видели основное действие.</p></article>
+<article class="soul-panel">
+<h3>Осталось гипотезой</h3>
+<p>Рейтинг доверия снизит барьер записи, а&nbsp;создание встречи из&nbsp;пустой зоны поддержит рост предложения.</p></article>
+<article class="soul-panel">
+<h3>Нужно измерить</h3>
+<p>Успешность поиска, долю пустой выдачи, переход из&nbsp;превью в&nbsp;карточку и&nbsp;конверсию в&nbsp;запись.</p></article></div>
+<article class="soul-panel soul-result-personal">
+<h3>Мой результат как продуктового дизайнера</h3>
+<p>Провела исследование, синтезировала и&nbsp;приоритизировала проблемы, перестроила два ключевых экрана, описала сквозной сценарий и&nbsp;согласовала ограничения поиска с&nbsp;разработчиками.</p></article>
+<p class="soul-note">Исследование проведено на&nbsp;небольшой выборке; количественный эффект решений предстоит проверить на&nbsp;объёме.</p></div></section>
+    <section class="related-projects" aria-labelledby="related-title" data-carousel>
+      <div class="related-heading container">
+<h2 id="related-title">Другие проекты</h2>
+        <div class="carousel-controls" hidden>
+          <button type="button" class="carousel-button" data-direction="-1" aria-label="Предыдущий проект" aria-controls="related-track" disabled><img src="../pic/chevron-left.svg" alt="" width="20" height="20"></button>
+          <button type="button" class="carousel-button" data-direction="1" aria-label="Следующий проект" aria-controls="related-track"><img src="../pic/chevron-right.svg" alt="" width="20" height="20"></button>
+        </div>
+      </div>
+      <div class="related-track" id="related-track" tabindex="0" role="region" aria-label="Другие проекты — прокручиваемый список">
+
+        <article class="related-card related-card--corporate">
+          <div class="related-content"><span class="badge">iOS / Android B2B2E</span>
+<h3>Сервис заказа корпоративного транспорта</h3>
+<p class="project-tags">Product logic · User flows · Mobile UX/UI</p><a class="case-link" href="./corporate-transport.html" aria-label="Смотреть кейс корпоративного транспорта">Смотреть кейс <span aria-hidden="true">→</span></a></div>
+          <img class="related-image" src="../pic/carousel-corporate-v2.png" alt="Превью сервиса корпоративного транспорта" width="305" height="252" loading="lazy" decoding="async">
+        </article>
+        <article class="related-card related-card--transport">
+          <div class="related-content"><span class="badge">Telegram MiniApp</span>
+<h3>Единый транспортный сервис для&nbsp;городских и&nbsp;междугородних поездок</h3>
+<p class="project-tags">Product concept · Information architecture · User flows · Mobile UX/UI · Edge cases</p><a class="case-link" href="./transport-app.html" aria-label="Смотреть кейс единого транспортного сервиса">Смотреть кейс <span aria-hidden="true">→</span></a></div>
+          <img class="related-image" src="../pic/carousel-transport-v2.png" alt="Превью единого транспортного сервиса" width="305" height="252" loading="lazy" decoding="async">
+        </article>
+        <article class="related-card related-card--cashier">
+          <div class="related-content"><span class="badge">Web B2B</span>
+<h3>АРМ Кассира</h3>
+<p class="project-tags">Complex B2B flows · Payment scenarios · Edge cases · Web UI</p><a class="case-link" href="./cashier.html" aria-label="Смотреть кейс АРМ Кассира">Смотреть кейс <span aria-hidden="true">→</span></a></div>
+          <img class="related-image" src="../pic/carousel-cashier-v2.png" alt="Превью автоматизированного рабочего места кассира" width="305" height="252" loading="lazy" decoding="async">
+        </article>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+<h2 id="contacts-title">Открыта к&nbsp;сотрудничеству</h2>
+        <div class="contact-cards">
+          <a class="contact-card" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener noreferrer"><span>Telegram</span><strong>@Lena_Suloeva <span aria-hidden="true">→</span></strong></a>
+          <a class="contact-card" href="mailto:lensuloeva@yandex.ru"><span>Почта</span><strong>lensuloeva@yandex.ru <span aria-hidden="true">→</span></strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+<div class="container">
+<div class="footer-meta">
+<p>Елена Сулоева · Product designer</p>
+<p>Портфолио · 2026</p></div>
+<div class="footer-line" aria-hidden="true"></div></div></footer>
+
+  <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-dialog-title" aria-describedby="contact-dialog-description">
+    <div class="contact-dialog-content">
+      <h2 id="contact-dialog-title">Свяжитесь со&nbsp;мной</h2>
+      <p id="contact-dialog-description">Расскажу о&nbsp;проектах подробнее и&nbsp;отвечу на&nbsp;вопросы</p>
+      <div class="contact-dialog-links">
+        <a href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener noreferrer"><span>Telegram</span><strong><img src="../pic/telegram.svg" alt="" width="20" height="20">@Lena_Suloeva</strong></a>
+        <a href="mailto:lensuloeva@yandex.ru"><span>Почта</span><strong><img src="../pic/email.svg" alt="" width="24" height="24">lensuloeva@yandex.ru</strong></a>
+      </div>
+      <button class="contact-dialog-close" type="button" aria-label="Закрыть окно связи" autofocus><img src="../pic/modal-close.svg" alt="" width="18" height="18"></button>
+    </div>
+  </dialog>
+</body>
+</html>

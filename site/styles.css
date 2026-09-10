@@ -47,7 +47,7 @@ img { display: block; }
 .contact-dialog-close:hover { background: rgb(255 255 255 / 12%); }
 html[data-contact-open] { overflow: hidden; }
 html[data-contact-open] body { overflow: hidden; }
-.header { position: relative; z-index: 2; display: flex; align-items: center; gap: 0; min-height: 74px; padding: 12px 12px 12px 24px; border: 1px solid rgb(255 255 255 / 12%); border-radius: 20px; background: rgb(255 255 255 / 6%); backdrop-filter: blur(12px); box-shadow: 0 12px 24px rgb(0 0 0 / 20%), 0 1px 4px rgb(0 0 0 / 10%); }
+.header { position: relative; z-index: 2; display: flex; align-items: center; gap: 0; min-height: 74px; padding: 12px 12px 12px 24px; border: 1px solid rgb(255 255 255 / 12%); border-radius: 20px; background: var(--surface); backdrop-filter: blur(12px); box-shadow: 0 12px 24px rgb(0 0 0 / 20%), 0 1px 4px rgb(0 0 0 / 10%); }
 .brand { display: flex; flex-shrink: 0; align-items: center; gap: 12px; font-family: Geologica, Geist, sans-serif; font-size: 16px; font-weight: 500; line-height: 20px; }
 .avatar { width: 48px; height: 48px; object-fit: cover; border-radius: 50%; }
 .navigation { display: flex; flex: 1; align-items: center; color: #8f99b2; font-size: 18px; line-height: 20px; }

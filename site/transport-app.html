@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05060a">
+  <meta name="description" content="Кейс Елены Сулоевой: единый транспортный сервис для городских и междугородних поездок. Транспортная карта, абонемент, поиск рейсов и маршруты с пересадкой.">
+  <title>Единый транспортный сервис — Елена Сулоева</title>
+  <link rel="icon" type="image/png" href="../pic/avatar.png">
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./styles.css?v=308b3522d08c">
+  <link rel="stylesheet" href="./case.css?v=f373c40229ff">
+  <script src="./script.js?v=00da8aa6c56a" defer></script>
+  <script src="./case.js" defer></script>
+  <script src="./transport.js?v=73afccf9d04b" defer></script>
+  <link rel="stylesheet" href="./transport.css?v=3a848def4f03">
+</head>
+<body class="case-page transport-page">
+  <a class="skip-link" href="#main">К содержимому</a>
+  <div class="header-shell">
+    <header class="header container">
+      <a class="brand" href="./index.html" aria-label="Елена Сулоева — на главную">
+        <img class="avatar" src="../pic/avatar.png" alt="" width="48" height="48">
+        <span>Елена Сулоева</span>
+      </a>
+      <nav class="navigation" id="navigation" aria-label="Основная навигация"><div class="navigation-links">
+        <a href="./index.html#about">Обо&nbsp;мне</a>
+        <a href="./index.html#projects">Проекты</a>
+        <a href="./index.html#experience">Опыт работы</a>
+        <a href="#contacts">Контакты</a>
+</div>        <button class="contact-button" type="button" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog" hidden>Связаться со&nbsp;мной</button>
+      </nav>
+
+      <button class="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="navigation" hidden>
+        <img src="../pic/menu.png" alt="" width="44" height="44">
+      </button>
+    </header>
+  </div>
+  <div class="case-header">
+
+    <div class="case-back container"><a href="./index.html#projects"><span aria-hidden="true">←</span> Назад к&nbsp;проектам</a></div>
+  </div>
+  <main id="main" tabindex="-1">
+<section class="transport-hero container" aria-labelledby="case-title">
+      <h1 id="case-title">Единый транспортный сервис для&nbsp;городских и&nbsp;междугородних поездок</h1>
+      <p class="transport-subtitle">Как объединить городские поездки и&nbsp;межгород в&nbsp;одном сервисе</p>
+      <ul class="case-meta" aria-label="О проекте"><li>Роль · Product designer</li><li>Платформы · iOS / Android</li><li>B2C</li></ul>
+      <img class="transport-showcase" src="../pic/transport-case/hero.png" alt="Четыре экрана единого транспортного сервиса: транспортная карта, поиск рейса, детали поездки и&nbsp;QR-билет" width="1248" height="630" fetchpriority="high" decoding="async">
+    </section>
+    <section class="transport-section transport-context container" aria-labelledby="context-title">
+      <p class="transport-eyebrow">01 · Контекст и&nbsp;проблема</p><h2 id="context-title">Частые поездки по&nbsp;городу и&nbsp;области остаются двумя разными сценариями</h2>
+      <div class="transport-grid transport-grid--two">
+        <article class="transport-panel"><h3>Контекст</h3><p>Калининградская область компактна, поэтому поездки между городом и&nbsp;областью — часть повседневной жизни. Жители ездят в&nbsp;Калининград на&nbsp;работу, а&nbsp;из города — к&nbsp;морю и&nbsp;в соседние города.</p></article>
+        <article class="transport-panel transport-panel--problem"><h3>Проблема и&nbsp;задача</h3><p>Для&nbsp;городских и&nbsp;междугородних поездок нужны разные действия, а&nbsp;их цифровые сценарии разорваны. Я решила объединить их в&nbsp;одном приложении, сохранив различия в&nbsp;правилах поездки и&nbsp;оплаты.</p></article>
+      </div>
+    </section>
+    <section class="transport-section transport-card container" aria-labelledby="card-title">
+      <p class="transport-eyebrow">Решение 01 · Транспортная карта</p><h2 id="card-title">Убрать офлайн-барьер перед первой поездкой</h2>
+      <article class="transport-flow-panel">
+        <h3>Как изменился путь пользователя</h3>
+        <p>Тарифы и&nbsp;способы пополнения доступны сразу — оформить и&nbsp;пополнить карту можно без&nbsp;поездки в&nbsp;офис.</p>
+        <div class="transport-flow-desktop" role="img" aria-label="Получить и&nbsp;пополнить карту. Раньше: поездка в&nbsp;офис, получение карты, тариф и&nbsp;пополнение. В&nbsp;приложении: выпуск карты, тарифы доступны сразу, пополнение онлайн — без&nbsp;визита в&nbsp;офис.">
+          <svg viewBox="0 0 1184 220" preserveAspectRatio="none" aria-hidden="true"><path d="M180 110H211M211 57V175M211 57H250M211 175H250M400 57H460M620 57H680M400 175H460M650 175H720M890 175H980" fill="none" stroke="#2e6eeb" stroke-width="2"/></svg>
+          <span class="flow-label flow-label--before" aria-hidden="true">Раньше</span><span class="flow-label flow-label--after" aria-hidden="true">После переноса в&nbsp;приложение</span>
+          <span class="flow-node flow-node--root" aria-hidden="true">Получить и&nbsp;пополнить карту</span>
+          <span class="flow-node flow-node--office" aria-hidden="true">Поездка в&nbsp;офис</span><span class="flow-node flow-node--receive" aria-hidden="true">Получение карты</span><span class="flow-node flow-node--tariff" aria-hidden="true">Тариф и&nbsp;пополнение</span>
+          <span class="flow-node flow-node--issue" aria-hidden="true">Выпуск карты</span><span class="flow-node flow-node--available" aria-hidden="true">Тарифы доступны сразу</span><span class="flow-node flow-node--online" aria-hidden="true">Пополнение онлайн</span><span class="flow-node flow-node--result" aria-hidden="true">Без&nbsp;визита в&nbsp;офис</span>
+        </div>
+        <div class="transport-flow-mobile">
+          <div><h4>Раньше</h4><p>Поездка в&nbsp;офис → Получение карты → Тариф и&nbsp;пополнение</p></div>
+          <div><h4>После переноса в&nbsp;приложение</h4><p>Выпуск карты → Тарифы доступны сразу → Пополнение онлайн</p></div>
+        </div>
+      </article>
+      <div class="transport-grid transport-grid--three transport-issue-screens">
+        <figure class="transport-screen"><figcaption>Выбор типа карты</figcaption><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/card-type.png"><img class="transport-phone" src="../pic/transport-case/card-type.png" alt="Выбор типа карты" width="240" height="490" loading="lazy" decoding="async"></picture></figure>
+        <figure class="transport-screen"><figcaption>Выпуск виртуальной карты</figcaption><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/card-issue.png"><img class="transport-phone" src="../pic/transport-case/card-issue.png" alt="Выпуск виртуальной карты" width="240" height="490" loading="lazy" decoding="async"></picture></figure>
+        <figure class="transport-screen"><figcaption>Карта создана</figcaption><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/card-created.png"><img class="transport-phone" src="../pic/transport-case/card-created.png" alt="Карта создана" width="240" height="490" loading="lazy" decoding="async"></picture></figure>
+      </div>
+    </section>
+    <section class="transport-section transport-payment container" aria-labelledby="payment-title">
+      <p class="transport-eyebrow">Решение 02 · Баланс и&nbsp;абонемент</p><h2 id="payment-title">Баланс для&nbsp;нерегулярных поездок, абонемент — для&nbsp;постоянных</h2>
+      <div class="transport-grid transport-grid--two transport-payment-options">
+        <article class="transport-screen"><h3>Баланс</h3><p>Оплата по&nbsp;факту использования для&nbsp;нерегулярных поездок и&nbsp;пользователей без&nbsp;абонемента.</p><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/balance.png"><img class="transport-phone" src="../pic/transport-case/balance.png" alt="Пополнение баланса транспортной карты" width="240" height="490" loading="lazy" decoding="async"></picture></article>
+        <article class="transport-screen"><h3>Абонемент</h3><p>Предсказуемые расходы для&nbsp;ежедневных маршрутов и&nbsp;регулярных поездок.</p><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/subscription.png"><img class="transport-phone" src="../pic/transport-case/subscription.png" alt="Покупка абонемента" width="240" height="490" loading="lazy" decoding="async"></picture></article>
+      </div>
+      <article class="transport-subscription">
+        <div class="transport-subscription-intro"><h3>После покупки абонемента</h3><p>Статус и&nbsp;оставшиеся поездки видны на&nbsp;карте. Приложение заранее предупреждает, когда абонемент скоро закончится.</p></div>
+        <div id="subscription-screens" class="transport-status-screens" tabindex="0" role="region" aria-roledescription="карусель" aria-label="Состояния абонемента">
+          <figure class="transport-screen"><figcaption>Карта активна</figcaption><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/active.png"><img class="transport-phone" src="../pic/transport-case/active.png" alt="Карта активна" width="241" height="493" loading="lazy" decoding="async"></picture></figure>
+          <figure class="transport-screen"><figcaption>Скоро закончится</figcaption><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/expiring.svg"><img class="transport-phone" src="../pic/transport-case/expiring.png" alt="Скоро закончится" width="241" height="493" loading="lazy" decoding="async"></picture></figure>
+          <figure class="transport-screen"><figcaption>Последняя поездка</figcaption><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/last-trip.svg"><img class="transport-phone" src="../pic/transport-case/last-trip.png" alt="Последняя поездка" width="241" height="493" loading="lazy" decoding="async"></picture></figure>
+          <figure class="transport-screen"><figcaption>Абонемент закончился</figcaption><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/expired.svg"><img class="transport-phone" src="../pic/transport-case/expired.png" alt="Абонемент закончился" width="241" height="497" loading="lazy" decoding="async"></picture></figure>
+        </div>
+        <div class="transport-lifecycle"><h3>Жизненный цикл абонемента</h3><p>Статус меняется автоматически и&nbsp;всегда виден на&nbsp;карте. Предупреждение появляется заранее и&nbsp;не мешает поездке.</p>
+          <ol class="transport-lifecycle-steps"><li>01 · Активен</li><li>02 · Скоро закончится</li><li>03 · Последняя поездка</li><li>04 · Закончился</li></ol>
+        </div>
+      </article>
+    </section>
+    <section class="transport-section transport-intercity container" aria-labelledby="intercity-title">
+      <p class="transport-eyebrow">Решение 03 · Междугородние поездки</p><h2 id="intercity-title">Найти междугородний рейс и&nbsp;понять всю поездку до&nbsp;оплаты</h2>
+      <p class="transport-lead">При&nbsp;выборе междугороднего рейса пассажиру важны время отправления и&nbsp;прибытия, стоимость, место посадки, пересадка и&nbsp;общая длительность. Поэтому ключевые параметры показаны уже в&nbsp;результатах поиска.</p>
+      <ul class="transport-factors" aria-label="Параметры поездки"><li>Время</li><li>Цена</li><li>Место отправления</li><li>Пересадка</li><li>Длительность</li></ul>
+      <div class="transport-grid transport-grid--three transport-route-screens">
+        <figure class="transport-screen"><figcaption><span>01</span> Поиск маршрута</figcaption><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/search.png"><img class="transport-phone" src="../pic/transport-case/search.png" alt="Поиск маршрута" width="278" height="568" loading="lazy" decoding="async"></picture></figure>
+        <figure class="transport-screen"><figcaption><span>02</span> Результаты и&nbsp;сравнение</figcaption><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/results.png"><img class="transport-phone" src="../pic/transport-case/results.png" alt="Результаты и&nbsp;сравнение" width="278" height="568" loading="lazy" decoding="async"></picture></figure>
+        <figure class="transport-screen"><figcaption><span>03</span> Детали поездки</figcaption><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/details.png"><img class="transport-phone" src="../pic/transport-case/details.png" alt="Детали поездки" width="278" height="568" loading="lazy" decoding="async"></picture></figure>
+      </div>
+    </section>
+    <section class="transport-section transport-transfer container" aria-labelledby="transfer-title">
+      <p class="transport-eyebrow">Решение 04 · Пересадка</p><h2 id="transfer-title">Маршрут с&nbsp;пересадкой остаётся одной поездкой</h2>
+      <p class="transport-lead">Технически это несколько рейсов и&nbsp;сегментов. Для&nbsp;пассажира — одна задача: попасть из&nbsp;точки A в&nbsp;точку B.<br>Поэтому сегменты объединены общей логикой.</p>
+      <div class="transport-transfer-grid">
+        <div id="transfer-screens" aria-roledescription="карусель" class="transport-transfer-screens" tabindex="0" role="region" aria-label="Маршрут с&nbsp;пересадкой и&nbsp;единый билет — прокручиваемые экраны"><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/transfer-details.png"><img class="transport-phone" src="../pic/transport-case/transfer-details.png" alt="Детали единого маршрута с&nbsp;пересадкой" width="278" height="568" loading="lazy" decoding="async"></picture><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/transfer-ticket.svg"><img class="transport-phone" src="../pic/transport-case/transfer-ticket.png" alt="Единый QR-билет для&nbsp;маршрута с&nbsp;пересадкой" width="278" height="568" loading="lazy" decoding="async"></picture></div>
+        <div class="transport-transfer-values">
+          <article class="transport-panel"><h3>Пользователю</h3><p>Легче сравнивать варианты, понятнее общая длительность, меньше риска купить несовместимые рейсы.</p></article>
+          <article class="transport-panel"><h3>Продукту</h3><p>Покупка остаётся единым сценарием, заказ проще сопровождать при&nbsp;изменении одного из&nbsp;сегментов.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="transport-section transport-repeat container" aria-labelledby="repeat-title">
+      <p class="transport-eyebrow">Решение 05 · Быстрый доступ</p><h2 id="repeat-title">Повторные действия не&nbsp;возвращают пользователя в&nbsp;начало</h2>
+      <p class="transport-lead">Продумала сценарии, к&nbsp;которым пассажир возвращается каждый день, и&nbsp;состояния, в&nbsp;которых основной путь нельзя продолжить.</p>
+      <div class="transport-grid transport-grid--three transport-repeat-screens">
+        <article class="transport-screen"><h3>Недавние маршруты</h3><p>Повторить поиск без&nbsp;повторного ввода направления.</p><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/recent.png"><img class="transport-phone" src="../pic/transport-case/recent.png" alt="Недавние маршруты в&nbsp;поиске поездок" width="278" height="568" loading="lazy" decoding="async"></picture></article>
+        <article class="transport-screen"><h3>Продление абонемента</h3><p>Предупреждение появляется заранее и&nbsp;не блокирует поездку.</p><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/renew.png"><img class="transport-phone" src="../pic/transport-case/renew.png" alt="Билет и&nbsp;предупреждение о&nbsp;продлении абонемента" width="283" height="576" loading="lazy" decoding="async"></picture></article>
+        <article class="transport-screen"><h3>Нет рейсов на&nbsp;дату</h3><p>Направление сохраняется, сервис предлагает ближайшие даты.</p><picture class="transport-phone-picture"><source media="(max-width: 700px)" srcset="../pic/transport-case/mobile/no-trips.png"><img class="transport-phone" src="../pic/transport-case/no-trips.png" alt="Нет рейсов на&nbsp;выбранную дату: предложение ближайших дат" width="283" height="576" loading="lazy" decoding="async"></picture></article>
+      </div>
+    </section>
+    <section class="transport-section transport-format container" aria-labelledby="format-title">
+      <p class="transport-eyebrow">Формат проекта</p><h2 id="format-title">Самостоятельная концепция на&nbsp;основе опыта в&nbsp;транспортной предметной области</h2>
+      <p class="transport-lead">Кейс основан на&nbsp;опыте работы с&nbsp;реальным транспортным продуктом. Из-за NDA оригинальные интерфейсы, структура и&nbsp;материалы компании не&nbsp;используются.</p>
+      <div class="transport-grid transport-grid--three">
+        <article class="transport-panel"><span>01</span><h3>Сохранила</h3><p>Понимание предметной области, типовые ограничения и&nbsp;пользовательские сценарии.</p></article>
+        <article class="transport-panel"><span>02</span><h3>Переосмыслила</h3><p>Структуру продукта, информационную архитектуру и&nbsp;взаимодействие функций.</p></article>
+        <article class="transport-panel"><span>03</span><h3>Создала заново</h3><p>UI, визуальную систему, тексты, данные и&nbsp;все показанные экраны.</p></article>
+      </div>
+    </section>
+    <section class="related-projects" aria-labelledby="related-title" data-carousel>
+      <div class="related-heading container"><h2 id="related-title">Другие проекты</h2>
+        <div class="carousel-controls" hidden>
+          <button type="button" class="carousel-button" data-direction="-1" aria-label="Предыдущий проект" aria-controls="related-track" disabled><img src="../pic/chevron-left.svg" alt="" width="20" height="20"></button>
+          <button type="button" class="carousel-button" data-direction="1" aria-label="Следующий проект" aria-controls="related-track"><img src="../pic/chevron-right.svg" alt="" width="20" height="20"></button>
+        </div>
+      </div>
+      <div class="related-track" id="related-track" tabindex="0" role="region" aria-label="Другие проекты — прокручиваемый список">
+
+        <article class="related-card related-card--corporate">
+          <div class="related-content"><span class="badge">iOS / Android B2B2E</span><h3>Сервис заказа корпоративного транспорта</h3><p class="project-tags">Product logic · User flows · Mobile UX/UI</p><a class="case-link" href="./corporate-transport.html" aria-label="Смотреть кейс корпоративного транспорта">Смотреть кейс <span aria-hidden="true">→</span></a></div>
+          <img class="related-image" src="../pic/carousel-corporate-v2.png" alt="Превью сервиса корпоративного транспорта" width="305" height="252" loading="lazy" decoding="async">
+        </article>
+        <article class="related-card related-card--soul">
+          <div class="related-content"><span class="badge">Telegram MiniApp</span><h3>Платформа<br>для&nbsp;поиска компании<br>и&nbsp;активностей<br>в&nbsp;путешествиях</h3><p class="project-tags">UX Research · Synthesis · Product hypotheses · User Flow · Mobile UX/UI</p><a class="case-link" href="./soul.html" aria-label="Смотреть кейс Soul">Смотреть кейс <span aria-hidden="true">→</span></a></div>
+          <img class="related-image" src="../pic/carousel-soul-v2.png" alt="Приложение для путешествий на телефоне рядом с посадочным талоном" width="305" height="252" loading="lazy" decoding="async">
+        </article>
+        <article class="related-card related-card--cashier">
+          <div class="related-content"><span class="badge">Web B2B</span><h3>АРМ Кассира</h3><p class="project-tags">Complex B2B flows · Payment scenarios · Edge cases · Web UI</p><a class="case-link" href="./cashier.html" aria-label="Смотреть кейс АРМ Кассира">Смотреть кейс <span aria-hidden="true">→</span></a></div>
+          <img class="related-image" src="../pic/carousel-cashier-v2.png" alt="Превью автоматизированного рабочего места кассира" width="305" height="252" loading="lazy" decoding="async">
+        </article>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container"><h2 id="contacts-title">Открыта к&nbsp;сотрудничеству</h2>
+        <div class="contact-cards">
+          <a class="contact-card" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener noreferrer"><span>Telegram</span><strong>@Lena_Suloeva <span aria-hidden="true">→</span></strong></a>
+          <a class="contact-card" href="mailto:lensuloeva@yandex.ru"><span>Почта</span><strong>lensuloeva@yandex.ru <span aria-hidden="true">→</span></strong></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-meta"><p>Елена Сулоева · Product designer</p><p>Портфолио · 2026</p></div><div class="footer-line" aria-hidden="true"></div></div></footer>
+
+  <dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-dialog-title" aria-describedby="contact-dialog-description">
+    <div class="contact-dialog-content">
+      <h2 id="contact-dialog-title">Свяжитесь со&nbsp;мной</h2>
+      <p id="contact-dialog-description">Расскажу о&nbsp;проектах подробнее и&nbsp;отвечу на&nbsp;вопросы</p>
+      <div class="contact-dialog-links">
+        <a href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener noreferrer"><span>Telegram</span><strong><img src="../pic/telegram.svg" alt="" width="20" height="20">@Lena_Suloeva</strong></a>
+        <a href="mailto:lensuloeva@yandex.ru"><span>Почта</span><strong><img src="../pic/email.svg" alt="" width="24" height="24">lensuloeva@yandex.ru</strong></a>
+      </div>
+      <button class="contact-dialog-close" type="button" aria-label="Закрыть окно связи" autofocus><img src="../pic/modal-close.svg" alt="" width="18" height="18"></button>
+    </div>
+  </dialog>
+</body>
+</html>
